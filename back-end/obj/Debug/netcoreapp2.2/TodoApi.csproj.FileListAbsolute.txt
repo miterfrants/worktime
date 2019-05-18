@@ -1,0 +1,14 @@
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/bin/Debug/netcoreapp2.2/TodoApi.deps.json
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/bin/Debug/netcoreapp2.2/TodoApi.runtimeconfig.json
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/bin/Debug/netcoreapp2.2/TodoApi.runtimeconfig.dev.json
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/bin/Debug/netcoreapp2.2/TodoApi.dll
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/bin/Debug/netcoreapp2.2/TodoApi.pdb
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.csprojAssemblyReference.cache
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.csproj.CoreCompileInputs.cache
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.RazorAssemblyInfo.cache
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.RazorAssemblyInfo.cs
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.AssemblyInfoInputs.cache
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.AssemblyInfo.cs
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.RazorTargetAssemblyInfo.cache
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.dll
+/home/huangpo-hsiang/project/dotnet-docker/samples/restful-api/to-do-api/obj/Debug/netcoreapp2.2/TodoApi.pdb
