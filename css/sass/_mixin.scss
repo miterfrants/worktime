@@ -1,0 +1,101 @@
+@import "_mixin-font";
+
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 1070px;
+
+@mixin respond-to($media) {
+    @if $media == mx320 {
+        @media only screen and (max-width: 320px) {
+            @content;
+        }
+    }
+    @if $media == mx375 {
+        @media only screen and (max-width: 375px) {
+            @content;
+        }
+    }
+    @if $media == mx420 {
+        @media only screen and (max-width: 420px) {
+            @content;
+        }
+    }
+    @if $media == mx480 {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $media == mx620 {
+        @media only screen and (max-width: 620px) {
+            @content;
+        }
+    }
+    @if $media == mx767 {
+        @media only screen and (max-width: $break-medium - 1) {
+            @content;
+        }
+    }
+    @if $media == mx980 {
+        @media only screen and (max-width: 980px) {
+            @content;
+        }
+    }
+    @if $media == mx1024 {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+    @if $media == mx1069 {
+        @media only screen and (max-width: $break-large - 1) {
+            @content;
+        }
+    }
+    @if $media == mx1180 {
+        @media only screen and (max-width: $break-large + 110) {
+            @content;
+        }
+    }
+    @if $media == mx1280 {
+        @media only screen and (max-width: $break-large + 210) {
+            @content;
+        }
+    }
+    @if $media == min1070 {
+        @media only screen and (min-width: $break-large) {
+            @content;
+        }
+    }
+    @if $media == min1025 {
+        @media only screen and (min-width: $break-large - 45) {
+            @content;
+        }
+    }
+    @if $media == min768 {
+        @media only screen and (min-width: $break-medium) {
+            @content;
+        }
+    }
+    @if $media == m-sp-landscape {
+        @media only screen and (max-width: $break-medium - 1) and (orientation: landscape) { @content; }
+    }
+}
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin triangle() {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+}
