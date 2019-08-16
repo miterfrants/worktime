@@ -1240,28 +1240,22 @@ fieldset legend {
 }
 
 /*common s*/
-.block-2 > *, .block-3 > * {
+.block-3 > * {
   float: left;
   margin-right: 20px;
 }
-.block-2 > *:last-child, .block-3 > *:last-child {
+.block-3 > *:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 767px) {
-  .block-2.m-break > *, .block-3.m-break > * {
+  .block-3.m-break > * {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  .block-2.m-break > *:last-child, .block-3.m-break > *:last-child {
+  .block-3.m-break > *:last-child {
     margin-right: 0;
   }
-}
-
-.block-2 > * {
-  width: -moz-calc(( ( 100% - 20px ) / 2 ));
-  width: -webkit-calc(( ( 100% - 20px ) / 2 ));
-  width: calc(( ( 100% - 20px ) / 2 ));
 }
 
 .block-3 > * {
@@ -1353,7 +1347,6 @@ body footer {
   background: #73c3bc;
   color: #fff;
   text-align: center;
-  line-height: 120%;
 }
 body footer span {
   vertical-align: text-top;
@@ -1376,7 +1369,6 @@ body h2 {
   padding: 50px 0;
   font-size: 20px;
   text-align: center;
-  line-height: 125%;
 }
 @media only screen and (max-width: 767px) {
   body h2 {
@@ -1392,59 +1384,13 @@ body h2 .highlight {
   letter-spacing: 3px;
   text-indent: 3px;
 }
+body h2 .text {
+  line-height: 180%;
+}
 @media only screen and (max-width: 767px) {
   body h2 .text span {
     display: block;
   }
-}
-body > .top-title {
-  position: relative;
-  padding: 10px 0;
-  margin-bottom: 10px;
-  background: #0d5ca2;
-  color: #fff;
-  font-size: 22px;
-  font-weight: bolder;
-  text-align: center;
-  text-shadow: 1px 1px 2px #000000;
-}
-body > .top-title > div {
-  position: relative;
-}
-body > .top-title .l-arrow {
-  position: absolute;
-  left: 5px;
-}
-body > .top-title .l-arrow:before {
-  width: 12px;
-  height: 12px;
-  border-width: 2px;
-}
-body > .top-title + .news {
-  margin-top: -10px;
-}
-body .tab-list {
-  display: flex;
-  padding: 10px 0;
-}
-body .tab-list li {
-  padding: 10px;
-  flex: 1;
-  background: #949494;
-  border: 1px solid #949494;
-  border-top: 5px solid #949494;
-  color: #fff;
-  text-align: center;
-}
-body .tab-list li:hover {
-  cursor: pointer;
-}
-body .tab-list li.selected {
-  background: #fff;
-  border: 1px solid #73c3bc;
-  border-top: 5px solid #73c3bc;
-  border-bottom: 1px solid #fff;
-  color: #73c3bc;
 }
 body .fieldset-border {
   padding: 0 14px 14px;
@@ -1453,12 +1399,12 @@ body .fieldset-border {
   border: 1px solid #73c3bc;
   border-radius: 4px;
   background: #fff;
-  line-height: 125%;
   text-align: left;
+  line-height: 180%;
 }
 @media only screen and (min-width: 768px) {
   body .fieldset-border {
-    height: 144px;
+    height: 193px;
   }
 }
 body .fieldset-border legend {

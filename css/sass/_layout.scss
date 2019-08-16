@@ -6,7 +6,7 @@
 @import "compass/css3/transform";
 
 /*common s*/
-.block-2,.block-3{
+.block-3{
 	> *{
 		float:left;
 		margin-right: 20px;
@@ -27,22 +27,18 @@
 		}
 	}
 }
-.block-2{
-	>*{
-		@include calc (width,"( ( 100% - 20px ) / 2 )");
-    }
-}
+
 .block-3{
 	>*{
 		@include calc (width,"( ( 100% - 40px ) / 3 )");
     }
 }
 
-
 .wrap {
     width:100%;
     max-width: $min-wrap-width;
 }
+
 .wrap{
 	margin: 0 auto;
 	@include respond-to(mx767) {
@@ -51,16 +47,20 @@
         margin: 0 15px;
     }
 }
+
 .max-wrap-full,.min-wrap-full,.max-wrap,.min-wrap{
 	width:100%;
 	margin: 0 auto;
 }
+
 .max-wrap-full,.max-wrap{
     max-width: $max-wrap-width;
 }
+
 .min-wrap-full,.min-wrap{
     max-width: $min-wrap-width;
 }
+
 .max-wrap,.min-wrap{
     @include respond-to(mx1024) {
 		//padding:0 10px;
@@ -118,7 +118,6 @@ body{
 		background: $master-color;
 		color: #fff;
 		text-align: center;	
-		line-height: 120%;
 		span{
 			vertical-align: text-top;
 		}
@@ -137,7 +136,6 @@ body{
 		padding:50px 0;
 		font-size:20px;
 		text-align: center;
-		line-height: 125%;
 		@include respond-to(mx767) {
 			padding: 40px 0 10px;
 			font-size:18px;
@@ -151,6 +149,7 @@ body{
 		    text-indent: 3px;
 		}
 		.text{
+			line-height: 180%;
 			span{
 				@include respond-to(mx767) {
 					display: block;
@@ -158,71 +157,17 @@ body{
 			}
 		}
 	}
-	>.top-title{
-		position: relative;
-		padding: 10px 0;
-	    margin-bottom: 10px;
-	    background: #0d5ca2;
-	    color: #fff;
-	    font-size: 22px;
-	    font-weight: bolder;
-	    text-align: center;
-	    text-shadow: 1px 1px 2px #000000;
-	    >div{
-	    	position: relative;
-	    }
-	    .l-arrow{
-	    	position: absolute;
-    		left: 5px;
-    		&:before{
-    			width:12px;
-    			height:12px;
-    			border-width: 2px;
-    		}
-	    }
-	    +.news{
-	    	margin-top:-10px;
-	    }
-	}
-	.tab-list {
-        display: flex;
-        padding: 10px 0;
-
-        li {
-            padding: 10px;
-            flex: 1;
-            background: $grey-color;
-            border: 1px solid $grey-color;
-            border-top: 5px solid $grey-color;
-            color: #fff;
-            text-align: center;
-            &:hover {
-                cursor: pointer;
-            }
-
-            &.selected {
-                background: #fff;
-                border: 1px solid $master-color;
-                border-top: 5px solid $master-color;
-                border-bottom:1px solid #fff;
-                color: $master-color;
-            }
-        }
-
-    }
-	
 	.fieldset-border {
-		
 	    padding: 0 14px 14px;
 	    margin-top: 25px;
 	    margin-bottom: 25px;
 	    border: 1px solid  $master-color;
 	    border-radius: 4px;
 	    background: #fff;
-	    line-height: 125%;
 	    text-align: left;
+	    line-height: 180%;
 	    @include respond-to(min768) {
-			height: 144px;
+			height: 193px;
 		}
 	    legend {
 		    margin-bottom: 15px;
