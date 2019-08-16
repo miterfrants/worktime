@@ -1408,7 +1408,7 @@ body .fieldset-border {
   }
 }
 body .fieldset-border legend {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 body .fieldset-border legend span {
   padding: 0 5px 0 0;
