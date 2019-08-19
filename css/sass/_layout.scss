@@ -6,17 +6,19 @@
 @import "compass/css3/transform";
 
 /*common s*/
-.block-3{
+.split{
+	display: flex;
 	> *{
-		float:left;
+		flex: 1;
 		margin-right: 20px;
 		&:last-child{
             margin-right: 0;
         }
 	}
 	&.m-break{
-		>*{
-			@include respond-to(mx767) {
+		@include respond-to(mx767) {
+			display: block;	
+			>*{
 				width:100%;
 				margin-right: 0;
 				margin-bottom:20px;
@@ -27,41 +29,10 @@
 		}
 	}
 }
-
-.block-3{
-	>*{
-		@include calc (width,"( ( 100% - 40px ) / 3 )");
-    }
-}
-
-.wrap {
-    width:100%;
-    max-width: $min-wrap-width;
-}
-
-.wrap{
-	margin: 0 auto;
-	@include respond-to(mx767) {
-        width: 95%;
-        @include calc(width, "( 100% - ( 15px * 2 ) )");
-        margin: 0 15px;
-    }
-}
-
-.max-wrap-full,.min-wrap-full,.max-wrap,.min-wrap{
+.min-wrap{
 	width:100%;
+	max-width: $min-wrap-width;
 	margin: 0 auto;
-}
-
-.max-wrap-full,.max-wrap{
-    max-width: $max-wrap-width;
-}
-
-.min-wrap-full,.min-wrap{
-    max-width: $min-wrap-width;
-}
-
-.max-wrap,.min-wrap{
     @include respond-to(mx1024) {
 		//padding:0 10px;
 		padding:0 15px;
@@ -128,8 +99,8 @@ body{
 	}
 	section{
 		@include respond-to(min768) {
-        	@include calc(padding-top, "( ( 100vh - 604px ) / 2 )");
-        	@include calc(padding-bottom, "( ( 100vh - 604px ) / 2 )");
+        	@include calc(padding-top, "( ( 100vh - 668px ) / 2 )");
+        	@include calc(padding-bottom, "( ( 100vh - 668px ) / 2 )");
 		}
 	}
 	h2{
@@ -166,9 +137,6 @@ body{
 	    background: #fff;
 	    text-align: left;
 	    line-height: 180%;
-	    @include respond-to(min768) {
-			height: 193px;
-		}
 	    legend {
 		    margin-bottom: 5px;
 		    span{
@@ -176,7 +144,6 @@ body{
 		    	font-size: 24px;
 		    	vertical-align: text-bottom;
 		    }
-
 		}
 		.title{
 			color: $master-color;

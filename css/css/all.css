@@ -1240,63 +1240,37 @@ fieldset legend {
 }
 
 /*common s*/
-.block-3 > * {
-  float: left;
+.split {
+  display: flex;
+}
+.split > * {
+  flex: 1;
   margin-right: 20px;
 }
-.block-3 > *:last-child {
+.split > *:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 767px) {
-  .block-3.m-break > * {
+  .split.m-break {
+    display: block;
+  }
+  .split.m-break > * {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  .block-3.m-break > *:last-child {
+  .split.m-break > *:last-child {
     margin-right: 0;
   }
 }
 
-.block-3 > * {
-  width: -moz-calc(( ( 100% - 40px ) / 3 ));
-  width: -webkit-calc(( ( 100% - 40px ) / 3 ));
-  width: calc(( ( 100% - 40px ) / 3 ));
-}
-
-.wrap {
+.min-wrap {
   width: 100%;
   max-width: 1000px;
-}
-
-.wrap {
   margin: 0 auto;
 }
-@media only screen and (max-width: 767px) {
-  .wrap {
-    width: 95%;
-    width: -moz-calc(( 100% - ( 15px * 2 ) ));
-    width: -webkit-calc(( 100% - ( 15px * 2 ) ));
-    width: calc(( 100% - ( 15px * 2 ) ));
-    margin: 0 15px;
-  }
-}
-
-.max-wrap-full, .min-wrap-full, .max-wrap, .min-wrap {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.max-wrap-full, .max-wrap {
-  max-width: 1400px;
-}
-
-.min-wrap-full, .min-wrap {
-  max-width: 1000px;
-}
-
 @media only screen and (max-width: 1024px) {
-  .max-wrap, .min-wrap {
+  .min-wrap {
     padding: 0 15px;
   }
 }
@@ -1357,12 +1331,12 @@ body footer a {
 }
 @media only screen and (min-width: 768px) {
   body section {
-    padding-top: -moz-calc(( ( 100vh - 604px ) / 2 ));
-    padding-top: -webkit-calc(( ( 100vh - 604px ) / 2 ));
-    padding-top: calc(( ( 100vh - 604px ) / 2 ));
-    padding-bottom: -moz-calc(( ( 100vh - 604px ) / 2 ));
-    padding-bottom: -webkit-calc(( ( 100vh - 604px ) / 2 ));
-    padding-bottom: calc(( ( 100vh - 604px ) / 2 ));
+    padding-top: -moz-calc(( ( 100vh - 668px ) / 2 ));
+    padding-top: -webkit-calc(( ( 100vh - 668px ) / 2 ));
+    padding-top: calc(( ( 100vh - 668px ) / 2 ));
+    padding-bottom: -moz-calc(( ( 100vh - 668px ) / 2 ));
+    padding-bottom: -webkit-calc(( ( 100vh - 668px ) / 2 ));
+    padding-bottom: calc(( ( 100vh - 668px ) / 2 ));
   }
 }
 body h2 {
@@ -1401,11 +1375,6 @@ body .fieldset-border {
   background: #fff;
   text-align: left;
   line-height: 180%;
-}
-@media only screen and (min-width: 768px) {
-  body .fieldset-border {
-    height: 193px;
-  }
 }
 body .fieldset-border legend {
   margin-bottom: 5px;
