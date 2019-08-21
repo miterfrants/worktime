@@ -1321,6 +1321,7 @@ body footer {
   background: #73c3bc;
   color: #fff;
   text-align: center;
+  line-height: 150%;
 }
 body footer span {
   vertical-align: text-top;
@@ -1329,14 +1330,17 @@ body footer a {
   padding-bottom: 1px;
   border-bottom: 1px solid;
 }
+body footer .icon-mail {
+  font-size: 18px;
+}
 @media only screen and (min-width: 768px) {
   body section {
-    padding-top: -moz-calc(( ( 100vh - 668px ) / 2 ));
-    padding-top: -webkit-calc(( ( 100vh - 668px ) / 2 ));
-    padding-top: calc(( ( 100vh - 668px ) / 2 ));
-    padding-bottom: -moz-calc(( ( 100vh - 668px ) / 2 ));
-    padding-bottom: -webkit-calc(( ( 100vh - 668px ) / 2 ));
-    padding-bottom: calc(( ( 100vh - 668px ) / 2 ));
+    padding-top: -moz-calc(( ( 100vh - 696px ) / 2 ));
+    padding-top: -webkit-calc(( ( 100vh - 696px ) / 2 ));
+    padding-top: calc(( ( 100vh - 696px ) / 2 ));
+    padding-bottom: -moz-calc(( ( 100vh - 696px ) / 2 ));
+    padding-bottom: -webkit-calc(( ( 100vh - 696px ) / 2 ));
+    padding-bottom: calc(( ( 100vh - 696px ) / 2 ));
   }
 }
 body h2 {

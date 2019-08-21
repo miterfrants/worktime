@@ -89,6 +89,7 @@ body{
 		background: $master-color;
 		color: #fff;
 		text-align: center;	
+		line-height: 150%;
 		span{
 			vertical-align: text-top;
 		}
@@ -96,11 +97,14 @@ body{
 			padding-bottom: 1px;
     		border-bottom: 1px solid;
 		}
+		.icon-mail{
+			font-size: 18px;
+		}
 	}
 	section{
 		@include respond-to(min768) {
-        	@include calc(padding-top, "( ( 100vh - 668px ) / 2 )");
-        	@include calc(padding-bottom, "( ( 100vh - 668px ) / 2 )");
+        	@include calc(padding-top, "( ( 100vh - 696px ) / 2 )");
+        	@include calc(padding-bottom, "( ( 100vh - 696px ) / 2 )");
 		}
 	}
 	h2{
