@@ -60,7 +60,7 @@ body{
 			text-indent: 1px;
 			letter-spacing: 1px;
 			@include respond-to(mx767) {
-				padding: 15px 0 40px;
+				padding: 30px 0 50px;
 			}
 			span{
 				@include respond-to(mx767) {
@@ -167,12 +167,16 @@ body{
 		fieldset{
 			margin:20px 0;
 			border-top:1px solid #ddd;
+			@include respond-to(mx767) {
+				margin:20px 10px;
+			}
 			legend{
 				padding:0 10px;
 			}
 		}
 		.btn{
-			padding: 10px 15px;
+			width: 130px;
+			padding: 10px 0;
 			background: #f44336;
 			color: #fff;
 			border-radius: 4px;
@@ -185,7 +189,7 @@ body{
 	.info{
 		position: relative;
 		z-index: 9;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 		&:before,&:after{
 			content: ""; 
 			height: 0;

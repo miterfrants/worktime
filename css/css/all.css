@@ -1296,7 +1296,7 @@ body header h1 {
 }
 @media only screen and (max-width: 767px) {
   body header h1 {
-    padding: 15px 0 40px;
+    padding: 30px 0 50px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1403,11 +1403,17 @@ body .contact fieldset {
   margin: 20px 0;
   border-top: 1px solid #ddd;
 }
+@media only screen and (max-width: 767px) {
+  body .contact fieldset {
+    margin: 20px 10px;
+  }
+}
 body .contact fieldset legend {
   padding: 0 10px;
 }
 body .contact .btn {
-  padding: 10px 15px;
+  width: 130px;
+  padding: 10px 0;
   background: #f44336;
   color: #fff;
   border-radius: 4px;
@@ -1419,7 +1425,7 @@ body .contact .btn:first-child {
 body .info {
   position: relative;
   z-index: 9;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 body .info:before, body .info:after {
   content: "";
