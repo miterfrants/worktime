@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?rsjtpp");
@@ -6,7 +7,9 @@
   font-weight: normal;
   font-style: normal;
 }
-[class^="icon-"], [class*=" icon-"] {
+
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -1132,31 +1135,108 @@
   content: "\ea15";
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: Helvetica, Arial,"微軟正黑體";
+  font-family: Helvetica, Arial, "微軟正黑體";
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -1165,16 +1245,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -1199,15 +1283,19 @@ button {
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 }
+
 button:hover {
   cursor: pointer;
 }
+
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -1220,12 +1308,15 @@ img {
 fieldset {
   text-align: center;
 }
+
 fieldset legend {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1243,23 +1334,28 @@ fieldset legend {
 .split {
   display: flex;
 }
-.split > * {
+
+.split>* {
   flex: 1;
   margin-right: 20px;
 }
-.split > *:last-child {
+
+.split>*:last-child {
   margin-right: 0;
 }
+
 @media only screen and (max-width: 767px) {
   .split.m-break {
     display: block;
   }
-  .split.m-break > * {
+
+  .split.m-break>* {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  .split.m-break > *:last-child {
+
+  .split.m-break>*:last-child {
     margin-right: 0;
   }
 }
@@ -1269,6 +1365,7 @@ fieldset legend {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 1024px) {
   .min-wrap {
     padding: 0 15px;
@@ -1294,18 +1391,22 @@ body header h1 {
   text-indent: 1px;
   letter-spacing: 1px;
 }
+
 @media only screen and (max-width: 767px) {
   body header h1 {
     padding: 30px 0 50px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   body header h1 span {
     display: block;
     padding: 0 0 7px;
   }
 }
-body header h1:before, body header h1:after {
+
+body header h1:before,
+body header h1:after {
   content: "";
   height: 0;
   position: absolute;
@@ -1314,14 +1415,17 @@ body header h1:before, body header h1:after {
   z-index: 1;
   border-top: 45px solid transparent;
 }
+
 body header h1:before {
   left: 0;
   border-left: 50vw solid #fff;
 }
+
 body header h1:after {
   right: 0;
   border-right: 50vw solid #fff;
 }
+
 body footer {
   padding: 10px 5px;
   background: #73c3bc;
@@ -1329,27 +1433,33 @@ body footer {
   text-align: center;
   line-height: 150%;
 }
+
 body footer span {
   vertical-align: text-top;
 }
+
 body footer a {
   padding-bottom: 1px;
   border-bottom: 1px solid;
 }
+
 body footer .icon-mail {
   font-size: 18px;
 }
+
 body h2 {
   padding: 90px 0 30px;
   font-size: 20px;
   text-align: center;
 }
+
 @media only screen and (max-width: 767px) {
   body h2 {
     padding: 40px 0 10px;
     font-size: 18px;
   }
 }
+
 body h2 .highlight {
   padding: 0 0 20px;
   color: #73c3bc;
@@ -1358,14 +1468,17 @@ body h2 .highlight {
   letter-spacing: 3px;
   text-indent: 3px;
 }
+
 body h2 .text {
   line-height: 180%;
 }
+
 @media only screen and (max-width: 767px) {
   body h2 .text span {
     display: block;
   }
 }
+
 body .fieldset-border {
   padding: 0 14px 14px;
   margin-top: 25px;
@@ -1376,58 +1489,71 @@ body .fieldset-border {
   text-align: left;
   line-height: 180%;
 }
+
 body .fieldset-border legend {
   margin-bottom: 5px;
 }
+
 body .fieldset-border legend span {
   padding: 0 5px 0 0;
   font-size: 24px;
   vertical-align: text-bottom;
 }
+
 body .fieldset-border .title {
   color: #73c3bc;
   font-size: 18px;
   text-align: center;
 }
+
 body .contact {
   padding: 30px 0;
   text-align: center;
   background: #e9fffc;
 }
+
 body .contact .s-title {
   padding: 20px 0;
   font-size: 20px;
   font-weight: bolder;
 }
+
 body .contact fieldset {
   margin: 20px 0;
   border-top: 1px solid #ddd;
 }
+
 @media only screen and (max-width: 767px) {
   body .contact fieldset {
     margin: 20px 10px;
   }
 }
+
 body .contact fieldset legend {
   padding: 0 10px;
 }
+
 body .contact .btn {
   width: 130px;
   padding: 10px 0;
-  background: #f44336;
+  background: #f4b136;
   color: #fff;
   border-radius: 4px;
   font-size: 17px;
 }
+
 body .contact .btn:first-child {
   margin-right: 4px;
 }
+
 body .info {
   position: relative;
   z-index: 9;
   padding-bottom: 50px;
 }
-body .info:before, body .info:after {
+
+body .info:before,
+body .info:after {
   content: "";
   height: 0;
   position: absolute;
@@ -1436,10 +1562,12 @@ body .info:before, body .info:after {
   z-index: 1;
   border-top: 45px solid transparent;
 }
+
 body .info:before {
   left: 0;
   border-left: 50vw solid #e9fffc;
 }
+
 body .info:after {
   right: 0;
   border-right: 50vw solid #e9fffc;
