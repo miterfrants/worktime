@@ -69,22 +69,25 @@
             <div class="wrap350">
                 <div class="s-title">想知道更多細節，可與我們聯繫...</div>
                 <div>
-                    <a href="https://docs.google.com/forms/d/1VeagvkMFiAi67A93hb_r7kQp0ofKN_80PIcpBG2xVU8/" target="_blank" class="btn">
+                    <a href="https://docs.google.com/forms/d/1VeagvkMFiAi67A93hb_r7kQp0ofKN_80PIcpBG2xVU8/"
+                        target="_blank" class="btn">
                         <span class="icon icon-edit"></span>
                         線上留言
                     </a>
-                     <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=miterfrants@gmail.com&tf=1&su=立即洽詢 Worktime 新創請假薪資系統"  target="_blank" class="btn">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=miterfrants+adsfrompeter@gmail.com&tf=1&su=立即洽詢 Worktime 新創請假薪資系統"
+                        target="_blank" class="btn link-to-mail">
                         <span class="icon-mail"></span>
                         Gmail 洽詢
                     </a>
                 </div>
-                
+
                 <fieldset>
                     <legend>OR</legend>
                 </fieldset>
                 <div>
-                    來信 Peter Huang : 
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=miterfrants@gmail.com&tf=1&su=想了解 Worktime 新創請假薪資系統">miterfrants@gmail.com</a>
+                    來信 Peter Huang :
+                    <a class="link-to-mail"
+                        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=miterfrants+adsfrompeter@gmail.com&tf=1&su=想了解 Worktime 新創請假薪資系統">miterfrants@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -95,6 +98,12 @@
     <script>
         var theDate = new Date();
         document.getElementById('spanCopyYear').innerText = theDate.getFullYear();
+        if (location.search.indexOf('?source=v') !== -1) {
+            document.querySelectorAll('.link-to-mail').forEach((el) => {
+                el.href =
+                    'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=miterfrants+adsfromvicky@gmail.com&tf=1&su=想了解 Worktime 新創請假薪資系統'
+            });
+        };
     </script>
 </body>
 

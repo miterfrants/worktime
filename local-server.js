@@ -6,6 +6,11 @@ var fileServer = new staticAlias.Server('./', {
     alias: [{
         match: /\/worktime\/([a-z|A-Z|\-|_|0-9]+\/){0,}$/,
         serve: 'index.html'
+    }, {
+        match: /\/worktime\/([^/]+\/)*([^/]+)\.(js|css|png|woff2|woff|ttf|html|gif|svg|json|jpg)$/,
+        serve: function (params) {
+            return params.reqPath.replace(/\/worktime\//gi, '');
+        },
     }]
 });
 
